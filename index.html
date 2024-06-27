@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JARVIS-Themed Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>OUT S1DERS</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for products or categories...">
+            <button onclick="filterProducts()">Search</button>
+        </div>
+        <div class="category-container">
+            <select id="categorySelect" onchange="filterByCategory()">
+                <option value="all">All</option>
+                <option value="men's clothing">Men's Clothing</option>
+                <option value="women's clothing">Women's Clothing</option>
+                <option value="jewelery">Jewelery</option>
+                <option value="electronics">Electronics</option>
+            </select>
+        </div>
+    </header>
+    <main>
+        <div id="products" class="product-container"></div>
+    </main>
+    <footer>
+        <div class="cart-header">
+            <h1>Cart</h1>
+            <img src="images/shopping-cart.png" alt="Cart" height="100px">
+        </div>
+        <div id="cart" class="cart-container"></div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
